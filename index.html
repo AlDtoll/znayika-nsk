@@ -31,10 +31,12 @@
         /* Scroll animation */
         .fade-up {
             opacity: 0;
-            transform: translateY(28px);
+            transform: translate3d(0, 24px, 0);
             transition: opacity 0.55s ease, transform 0.55s ease;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
-        .fade-up.visible { opacity: 1; transform: none; }
+        .fade-up.visible { opacity: 1; transform: translate3d(0, 0, 0); }
 
         /* ── Hero ── */
         .hero {
@@ -334,12 +336,12 @@
                 <p class="review-author">— Валерия Шмидт</p>
             </div>
             <div class="review-card">
-                <div class="review-stars">★★★★</div>
-                <p class="review-text">«Отличная подготовишка «Знайка»! 2 года назад ходил сюда старший сынок, педагоги подготовили ребёнка к школе очень хорошо. В этом году в «Знайку» ходит второй сынок — уже отлично читает и считает. Дети ходят с огромным интересом, родители довольны результатом!»</p>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">«Отличная подготовишка «Знайка»! 2 года назад ходил сюда старший сынок, педагоги подготовили ребёнка к школе очень хорошо. В этом году второй сынок уже отлично читает и считает. Дети ходят с огромным интересом, родители довольны результатом!»</p>
                 <p class="review-author">— Анастасия Федорова</p>
             </div>
             <div class="review-card">
-                <div class="review-stars">★★★★</div>
+                <div class="review-stars">★★★★★</div>
                 <p class="review-text">«Оксана Анатольевна и Оксана Николаевна, спасибо за ваш труд! В студию ходим второй год. Всё очень интересно. Ответственный подход к подготовке!»</p>
                 <p class="review-author">— Дарья Кузнецова</p>
             </div>
